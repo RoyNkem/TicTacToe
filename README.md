@@ -35,6 +35,8 @@ A `combinatorics` study of the game shows that when "X" makes the first move eve
 - 44 distinct positions are won by (O)
 - 3 distinct positions are drawn (often called a "cat's game"[15])
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Contributors :fries:
 - [Roy Aiyetin (Author)](https://github.com/RoyNkem)
 - [Kavsoft](https://github.com/kenfai)
@@ -43,6 +45,8 @@ A `combinatorics` study of the game shows that when "X" makes the first move eve
 ## Contributing & Issues :computer:
 - Simply fork the repo, make changes and make a pull request
 - You can open an issue for support or suggestions
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Connect with me  :coffee:
 <p align="center">
