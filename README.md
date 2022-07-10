@@ -1,10 +1,10 @@
-# TicTacToe
+# TicTacToe <img src="https://user-images.githubusercontent.com/95645767/178164263-07af9124-06db-464d-9bc5-4deed0e806f9.png" width="35" height="35" />
 
 <p align="left"> <a href="https://twitter.com/theroyaiyetin" target="blank"><img src="https://img.shields.io/twitter/follow/theroyaiyetin?logo=twitter&style=for-the-badge" alt="theroyaiyetin" /></a> </p>
 
 You probably already know how to play `TicTacToe`. It's a really simple game for two players!
 
-Its does'nt really matter who goes first whether  or O
+Its does'nt really matter who goes first, whether `X` or `O`
 
 `TicTacToe` involves thinking ahead and trying to figure out what the person playing against you might do next.
 
@@ -21,7 +21,7 @@ If you always pay attention and think ahead, you'll never lose a game of TicTacT
 ### Rules For `TicTacToe` :robot:
 - The game is played on a grid that's 3 squares by 3 squares.
 
-- You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+- You are `X`, your friend (or the computer in this case) is `O`. Players take turns putting their marks in empty squares.
 
 - The first player to get 3 marks in a row (up, down, across, or diagonally) is the winner.
 
