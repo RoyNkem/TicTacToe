@@ -13,8 +13,10 @@ struct TicTacBox: View {
     
     @State var moves: [String] = Array(repeating: "", count: 9) //Moves...
     @State var isPlaying = true
-    @State var gameIsOver = true
+    @State var gameIsOver = false
+    @State var msg = ""
     
+    //MARK: - Grid Cell
     var body: some View {
         VStack {
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)) {
@@ -24,7 +26,7 @@ struct TicTacBox: View {
                     ZStack {
                         //Flip Animation
                         Color.blue
-//The color white is stacked on blue. When the cell is empty, make white show, else make cell blue. Achieve this with Opacity:
+                        //The color white is stacked on blue. When the cell is empty, make white show, else make cell blue. Achieve this with Opacity:
                         Color.white
                             .opacity(moves[index] == "" ? 1 : 0)
                         
@@ -33,7 +35,7 @@ struct TicTacBox: View {
                             .font(.system(size: 55))
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
-// if there is text after tap, let the cell
+                        // if there is text after tap, let the cell
                             .opacity(moves[index] != "" ? 1 : 0)
                     }
                     .frame(width: getWidth(), height: getWidth())
@@ -46,7 +48,7 @@ struct TicTacBox: View {
                     .onTapGesture(perform: {
                         
                         withAnimation(Animation.easeIn(duration: 0.5)) {
-// only play on empty cell
+                            // only play on empty cell
                             if moves[index] == "" {
                                 moves[index] = isPlaying ? "X" : "O"
                                 //update Player
@@ -55,13 +57,28 @@ struct TicTacBox: View {
                         }
                     })
                 }
+            }// when value of moves change (i.e "x" or "o") It will check for winner
+            .onChange(of: moves) { winner in
+                checkWinner()
+            }
+            .alert(isPresented: $gameIsOver) {
+                Alert(title: Text("Winner"), message: Text(msg), dismissButton: .destructive(Text("Play Again"), action: {
+                    
+                    // reset all data
+                    withAnimation(Animation.easeIn(duration: 0.5)) {
+                        moves.removeAll()
+                        moves = Array(repeating: "", count: 9)
+                        isPlaying = true
+                    }
+                }))
             }
         }
         .padding()
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
+    
+    //MARK: - Grid Cell Width
     func getWidth() -> CGFloat { //width of Grids
         // horizontal padding = 15 * 2 (trailing and leading)
         // spacing  = 15 in between 2 boxes
@@ -71,6 +88,30 @@ struct TicTacBox: View {
         return width / 3
     }
     
+    //MARK: - Check Winner
+    func checkWinner() {
+        if checkMoves(player: "X") == true {
+            msg = "Player X won"
+            gameIsOver.toggle()
+        }
+        
+        if checkMoves(player: "O") == true {
+            msg = "Player O won"
+            gameIsOver.toggle()
+        }
+    }
+    
+    //MARK: - Check Matching Moves
+    func checkMoves(player: String) -> Bool {
+        //Horizontal Win
+        for i in stride(from: 0, to: 9, by: 3) {
+            
+            if moves[i] == player && moves[i + 1] == player && moves[i + 2] == player {
+                return true
+            }
+        }
+        return false // default
+    }
 }
 
 struct TicTacBox_Previews: PreviewProvider {
