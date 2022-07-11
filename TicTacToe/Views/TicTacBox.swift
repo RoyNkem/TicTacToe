@@ -110,10 +110,28 @@ struct TicTacBox: View {
                 return true
             }
         }
+        
+        //Vertical Win
+        for i in 0...2 {
+            
+            if moves[i] == player && moves[i + 3] == player && moves[i + 6] == player {
+                return true
+            }
+        }
+        
+        //Diagonal Win
+        if moves[0] == player && moves[4] == player && moves[8] == player {
+            return true
+        }
+        if moves[2] == player && moves[4] == player && moves[6] == player {
+            return true
+        }
+        
         return false // default
     }
 }
 
+//MARK: - PREVIEW
 struct TicTacBox_Previews: PreviewProvider {
     static var previews: some View {
         TicTacBox()
