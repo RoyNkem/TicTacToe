@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack {
                 TicTacBox()
-                
-                
             }
             
             PlayersCard()
@@ -27,7 +23,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        ContentView()
-            .preferredColorScheme(.dark)
+//        ContentView()
+//            .preferredColorScheme(.dark)
     }
 }

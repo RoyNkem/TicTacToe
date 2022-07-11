@@ -24,10 +24,10 @@ struct TicTacBox: View {
                 ForEach(0..<9, id: \.self) { index in
                     
                     ZStack {
-                        //Flip Animation
-                        Color.blue
+                        //Flip Animation with color when player taps
+                        Color("play")
                         //The color white is stacked on blue. When the cell is empty, make white show, else make cell blue. Achieve this with Opacity:
-                        Color.white
+                        Color("cell")
                             .opacity(moves[index] == "" ? 1 : 0)
                         
                         // the indexpath for lazy grid corresponds to moves index
@@ -75,6 +75,7 @@ struct TicTacBox: View {
         }
         .padding()
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+        .frame(maxHeight: .infinity)
     }
     
     
@@ -95,10 +96,22 @@ struct TicTacBox: View {
             gameIsOver.toggle()
         }
         
-        if checkMoves(player: "O") == true {
+        else if checkMoves(player: "O") == true {
             msg = "Player O won"
             gameIsOver.toggle()
         }
+        // checking No Winner
+        else { // check if there are any empty cell with no text(X or O) in moves
+            let cellStatus = moves.contains { value in
+                return value == ""
+            }
+            
+            if !cellStatus { //false(moves does not contain empty cell)
+                msg = "Game Over Tied"
+                gameIsOver.toggle()
+            }
+        }
+        
     }
     
     //MARK: - Check Matching Moves
@@ -135,6 +148,6 @@ struct TicTacBox: View {
 struct TicTacBox_Previews: PreviewProvider {
     static var previews: some View {
         TicTacBox()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
