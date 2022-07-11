@@ -25,9 +25,26 @@ struct TicTacBox: View {
                         
                         Color.white
                         
+                        // the indexpath for lazy grid corresponds to moves index
+                        Text(moves[index])
+                            .font(.system(size: 55))
+                            .fontWeight(.heavy)
+                            .foregroundColor(.black)
+                        
                     }
                     .frame(width: getWidth(), height: getWidth())
                     .cornerRadius(15)
+                    .onTapGesture(perform: {
+                        
+                        withAnimation(Animation.easeIn(duration: 0.5)) {
+//                            only play on empty cell
+                            if moves[index] == "" {
+                                moves[index] = isPlaying ? "X" : "O"
+                                //update Player
+                                isPlaying.toggle()
+                            }
+                        }
+                    })
                 }
             }
         }
@@ -44,6 +61,7 @@ struct TicTacBox: View {
         
         return width / 3
     }
+    
 }
 
 struct TicTacBox_Previews: PreviewProvider {
