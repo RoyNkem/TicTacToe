@@ -16,6 +16,7 @@ struct PlayersCard: View {
                     .symbolVariant(.fill)
                     .frame(width: 40, height: 40)
                     .font(.title)
+                    .padding(.leading)
                 
                 VStack {
                     Text("PLAYER 1")
@@ -51,6 +52,8 @@ struct PlayersCard: View {
                     .symbolVariant(.fill)
                     .frame(width: 40, height: 40)
                     .font(.title)
+                    .padding(.trailing)
+
             }
             .padding(.trailing, -15)
         }
