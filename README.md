@@ -1,8 +1,8 @@
 # TicTacToe <img src="https://user-images.githubusercontent.com/95645767/178164263-07af9124-06db-464d-9bc5-4deed0e806f9.png" width="35" height="35" />
 
-<p align="left"> <a href="https://twitter.com/theroyaiyetin" target="blank"><img src="https://img.shields.io/twitter/follow/theroyaiyetin?logo=twitter&style=for-the-badge" alt="theroyaiyetin" /></a> </p>
-
 You probably already know how to play `TicTacToe`. It's a really simple game for two players!
+
+<p align="left"> <a href="https://twitter.com/theroyaiyetin" target="blank"><img src="https://img.shields.io/twitter/follow/theroyaiyetin?logo=twitter&style=for-the-badge" alt="theroyaiyetin" /></a> </p>
 
 Its does'nt really matter who goes first, whether `X` or `O`
 
@@ -27,7 +27,7 @@ If you always pay attention and think ahead, you'll never lose a game of TicTacT
 
 - When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
-### Fun Fact :apple:
+### Fun Facts :apple:
 
 A `combinatorics` study of the game shows that when "X" makes the first move every time, the game outcomes are as follows:
 
@@ -43,17 +43,20 @@ A `combinatorics` study of the game shows that when "X" makes the first move eve
 - [Sean Allen](https://github.com/SAllen0400)
 
 ## Contributing & Issues :computer:
-- Simply fork the repo, make changes and make a pull request
-- You can open an issue for support or suggestions
+1. Fork the the project
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Make required changes and commit (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
+6. You can open an issue for support or suggestions
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Connect with me  :coffee:
+## Questions?🤔
+### Connect with me  :coffee:
 <p align="center">
 <a href="https://twitter.com/theroyaiyetin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="theroyaiyetin" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/roy-aiyetin-97867718a/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="roy aiyetin" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/17664098" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="17664098" height="30" width="40" /></a>
-<a href="https://medium.com/@nkemaiyetin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@nkemaiyetin" height="30" width="40" /></a>
 <a href="https://discord.gg/princenkem#1581" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="princenkem#1581" height="30" width="40" /></a>
 </p>
 
