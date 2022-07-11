@@ -22,22 +22,31 @@ struct TicTacBox: View {
                 ForEach(0..<9, id: \.self) { index in
                     
                     ZStack {
-                        
+                        //Flip Animation
+                        Color.blue
+//The color white is stacked on blue. When the cell is empty, make white show, else make cell blue. Achieve this with Opacity:
                         Color.white
+                            .opacity(moves[index] == "" ? 1 : 0)
                         
                         // the indexpath for lazy grid corresponds to moves index
                         Text(moves[index])
                             .font(.system(size: 55))
                             .fontWeight(.heavy)
-                            .foregroundColor(.black)
-                        
+                            .foregroundColor(.white)
+// if there is text after tap, let the cell
+                            .opacity(moves[index] != "" ? 1 : 0)
                     }
                     .frame(width: getWidth(), height: getWidth())
                     .cornerRadius(15)
+                    .rotation3DEffect(.init(degrees: moves[index] != "" ? 180 : 0),
+                                      axis: (x: 0.0, y: 1.0, z: 0.0),
+                                      anchor: .center,
+                                      anchorZ: 0.0,
+                                      perspective: 1.0)
                     .onTapGesture(perform: {
                         
                         withAnimation(Animation.easeIn(duration: 0.5)) {
-//                            only play on empty cell
+// only play on empty cell
                             if moves[index] == "" {
                                 moves[index] = isPlaying ? "X" : "O"
                                 //update Player
