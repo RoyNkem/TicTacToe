@@ -44,9 +44,9 @@ A `combinatorics` study of the game shows that when "X" makes the first move eve
 
 ## Contributing & Issues :computer:
 1. Fork the the project
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Make required changes and commit (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
+2. Create your feature branch 
+3. Make required changes and commit 
+4. Push to the branch 
 5. Create new Pull Request
 6. You can open an issue for support or suggestions
 
