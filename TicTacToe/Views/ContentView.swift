@@ -17,6 +17,9 @@ struct ContentView: View {
             PlayersCard()
         }
         .background(LinearGradient(gradient: .init(colors: [Color("purple1"), Color("purple2")]), startPoint: .topTrailing, endPoint: .bottomLeading))
+        .overlay(
+            NavigationBar()
+        )
     }
 }
 

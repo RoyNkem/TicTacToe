@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TicTacToeApp: App {
+    @UIApplicationDelegateAdaptor var delegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

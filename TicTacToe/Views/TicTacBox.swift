@@ -76,6 +76,7 @@ struct TicTacBox: View {
         .padding()
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
         .frame(maxHeight: .infinity)
+        
     }
     
     
