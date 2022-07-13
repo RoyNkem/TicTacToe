@@ -23,6 +23,7 @@ struct HomeView: View {
                     .background(Color.green)
                     .foregroundColor(.white)
                     .cornerRadius(20)
+                    
             }
         } // presents modal view that covers screen when binding is true
         .fullScreenCover(isPresented: $isContentViewPresented) {

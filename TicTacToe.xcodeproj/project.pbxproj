@@ -18,6 +18,7 @@
 		30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09066287C9B460059BB30 /* SceneDelegate.swift */; };
 		30CA79C7287E25B30085AF62 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79C6287E25B30085AF62 /* NavigationBar.swift */; };
 		30CA79C9287E2C720085AF62 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79C8287E2C720085AF62 /* Extension.swift */; };
+		30CA79CB287E47190085AF62 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79CA287E47190085AF62 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		30B09066287C9B460059BB30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30CA79C6287E25B30085AF62 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		30CA79C8287E2C720085AF62 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		30CA79CA287E47190085AF62 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				308165552835277900BAF419 /* PlayersCard.swift */,
+				30CA79CA287E47190085AF62 /* Menu.swift */,
 				30CA79C6287E25B30085AF62 /* NavigationBar.swift */,
 			);
 			path = Components;
@@ -186,6 +189,7 @@
 				3081654328351B4000BAF419 /* ContentView.swift in Sources */,
 				30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */,
 				3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */,
+				30CA79CB287E47190085AF62 /* Menu.swift in Sources */,
 				308165562835277900BAF419 /* PlayersCard.swift in Sources */,
 				30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */,
 				30B09063287C948A0059BB30 /* HomeView.swift in Sources */,

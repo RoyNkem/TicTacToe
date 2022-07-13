@@ -15,26 +15,25 @@ struct NavigationBar: View {
                 .blur(radius: 5)
             
             HStack() {
+                
                 Text("TicTacToe")
                     .font(.largeTitle.weight(.heavy))
                     .frame(alignment: .leading)
                     .foregroundLinearGradient(colors: [.blue, .green], startPoint: .leading, endPoint: .trailing)
-                .padding(.leading)
+                    .padding(.leading)
                 
                 Image("TicTacToe")
                     .resizable()
                     .frame(width: 30, height: 30)
                     .clipShape(Circle())
-//                    .scaledToFit()
                 
                 Spacer()
                 
+                Menu()
             }
-                
         }
         .frame(height: 70)
         .frame(maxHeight: .infinity, alignment: .top)
-        
     }
 }
 

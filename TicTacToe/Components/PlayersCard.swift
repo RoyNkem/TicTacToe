@@ -25,7 +25,7 @@ struct PlayersCard: View {
                     Text("Roy")
                         .bold()
                         .font(.title)
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("name"))
                 }
             }
             .padding(.leading, -15)
