@@ -11,15 +11,16 @@ import SwiftUI
 
 struct TicTacBox: View {
     
+    var columns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)
     @State var moves: [String] = Array(repeating: "", count: 9) //Moves...
-    @State var isPlaying = true
+    @State var isPlaying = true //The current player
     @State var gameIsOver = false
     @State var msg = ""
     
     //MARK: - Grid Cell
     var body: some View {
         VStack {
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)) {
+            LazyVGrid(columns: columns) {
                 
                 ForEach(0..<9, id: \.self) { index in
                     
@@ -35,7 +36,7 @@ struct TicTacBox: View {
                             .font(.system(size: 55))
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
-                        // if there is text after tap, let the cell
+                        // if user tap cell with that has been tapped before
                             .opacity(moves[index] != "" ? 1 : 0)
                     }
                     .frame(width: getWidth(), height: getWidth())
@@ -118,7 +119,7 @@ struct TicTacBox: View {
     //MARK: - Check Matching Moves
     func checkMoves(player: String) -> Bool {
         //Horizontal Win
-        for i in stride(from: 0, to: 9, by: 3) {
+        for i in stride(from: 0, to: 9, by: 3) {// return sequence steopped by 3 i.e 0,3,6,
             
             if moves[i] == player && moves[i + 1] == player && moves[i + 2] == player {
                 return true

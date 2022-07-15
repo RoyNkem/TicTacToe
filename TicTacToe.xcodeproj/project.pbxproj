@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3075E60D2881D7B0003C9D0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60C2881D7B0003C9D0A /* SettingsView.swift */; };
+		3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60E2881D7E9003C9D0A /* AboutView.swift */; };
 		3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654028351B4000BAF419 /* TicTacToeApp.swift */; };
 		3081654328351B4000BAF419 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654228351B4000BAF419 /* ContentView.swift */; };
 		3081654528351B4400BAF419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081654428351B4400BAF419 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3075E60C2881D7B0003C9D0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3075E60E2881D7E9003C9D0A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3081653D28351B4000BAF419 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081654028351B4000BAF419 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
 		3081654228351B4000BAF419 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				30B09062287C948A0059BB30 /* HomeView.swift */,
 				3081654228351B4000BAF419 /* ContentView.swift */,
 				3081654E28351B6800BAF419 /* TicTacBox.swift */,
+				3075E60E2881D7E9003C9D0A /* AboutView.swift */,
+				3075E60C2881D7B0003C9D0A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,12 +195,14 @@
 				3081654328351B4000BAF419 /* ContentView.swift in Sources */,
 				30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */,
 				3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */,
+				3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */,
 				30CA79CB287E47190085AF62 /* Menu.swift in Sources */,
 				308165562835277900BAF419 /* PlayersCard.swift in Sources */,
 				30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */,
 				30B09063287C948A0059BB30 /* HomeView.swift in Sources */,
 				3081654F28351B6800BAF419 /* TicTacBox.swift in Sources */,
 				30CA79C7287E25B30085AF62 /* NavigationBar.swift in Sources */,
+				3075E60D2881D7B0003C9D0A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

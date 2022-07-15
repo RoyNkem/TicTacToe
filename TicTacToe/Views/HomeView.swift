@@ -16,14 +16,13 @@ struct HomeView: View {
             Button {
                 isContentViewPresented.toggle()
             } label: {
-                Text("Play Game")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .frame(width: 300, height: 50)
-                    .background(Color.green)
+                Image(systemName: "play.fill")
+                    .font(.largeTitle)
                     .foregroundColor(.white)
-                    .cornerRadius(20)
-                    
+                    .frame(width: 80, height: 80)
+                    .background(Color("play"))
+                    .cornerRadius(40)
+                
             }
         } // presents modal view that covers screen when binding is true
         .fullScreenCover(isPresented: $isContentViewPresented) {

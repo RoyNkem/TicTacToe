@@ -41,8 +41,12 @@ struct Menu: View {
         }
     }
 }
+
 struct DropdownMenu: View {
+    @State var isAboutViewPresented: Bool = false
+    
     var body: some View {
+        
         VStack(alignment: .leading) {
             Button {
                 
@@ -71,7 +75,7 @@ struct DropdownMenu: View {
             }
             
             Button {
-                
+                isAboutViewPresented.toggle()
             } label: {
                 HStack {
                     Image(systemName: "bubble.left.and.exclamationmark.bubble.right")
@@ -81,17 +85,18 @@ struct DropdownMenu: View {
                     Text("About")
                 }
             }
+            .sheet(isPresented: $isAboutViewPresented, onDismiss: nil) {
+                AboutView()
+            }
             
             Button {
-                
+
             } label: {
                 HStack {
                     Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                         .renderingMode(.original)
                         .frame(width: 38, height: 38)
                         .foregroundColor(.red)
-                        .font(.system(size: 20, weight: .medium, design: .default))
-                    
                     
                     Text("Restart")
                         .foregroundColor(.red)
