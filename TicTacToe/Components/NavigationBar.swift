@@ -40,5 +40,6 @@ struct NavigationBar: View {
 struct Navigation_Item_Previews: PreviewProvider {
     static var previews: some View {
         NavigationBar()
+//            .preferredColorScheme(.dark)
     }
 }

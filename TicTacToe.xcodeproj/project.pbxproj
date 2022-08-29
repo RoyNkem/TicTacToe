@@ -15,6 +15,8 @@
 		3081654828351B4400BAF419 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081654728351B4400BAF419 /* Preview Assets.xcassets */; };
 		3081654F28351B6800BAF419 /* TicTacBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654E28351B6800BAF419 /* TicTacBox.swift */; };
 		308165562835277900BAF419 /* PlayersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308165552835277900BAF419 /* PlayersCard.swift */; };
+		30AFDE8B28BD3E2D009665B1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */; };
+		30AFDE8D28BD3E66009665B1 /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */; };
 		30B09063287C948A0059BB30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09062287C948A0059BB30 /* HomeView.swift */; };
 		30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09064287C9A190059BB30 /* AppDelegate.swift */; };
 		30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09066287C9B460059BB30 /* SceneDelegate.swift */; };
@@ -33,6 +35,8 @@
 		3081654728351B4400BAF419 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3081654E28351B6800BAF419 /* TicTacBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacBox.swift; sourceTree = "<group>"; };
 		308165552835277900BAF419 /* PlayersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCard.swift; sourceTree = "<group>"; };
+		30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
 		30B09062287C948A0059BB30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		30B09064287C9A190059BB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B09066287C9B460059BB30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				3081654E28351B6800BAF419 /* TicTacBox.swift */,
 				3075E60E2881D7E9003C9D0A /* AboutView.swift */,
 				3075E60C2881D7B0003C9D0A /* SettingsView.swift */,
+				30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */,
+				30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +208,8 @@
 				30B09063287C948A0059BB30 /* HomeView.swift in Sources */,
 				3081654F28351B6800BAF419 /* TicTacBox.swift in Sources */,
 				30CA79C7287E25B30085AF62 /* NavigationBar.swift in Sources */,
+				30AFDE8B28BD3E2D009665B1 /* LoadingView.swift in Sources */,
+				30AFDE8D28BD3E66009665B1 /* CapsuleView.swift in Sources */,
 				3075E60D2881D7B0003C9D0A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

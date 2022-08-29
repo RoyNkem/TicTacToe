@@ -25,14 +25,7 @@ struct AboutView: View {
                     .foregroundColor(Color("play"))
             }
             .padding(.bottom, 20)
-//            .rotation3DEffect(.init(degrees: 180),
-//                            axis: (x: 0.0, y: 1.0, z: 0.0),
-//                            anchor: .center,
-//                            anchorZ: 0.0,
-//                            perspective: 1.0)
-//            .onTapGesture {
-//            }
-//
+
             Button {
                 print("about")
             } label: {
@@ -70,6 +63,7 @@ struct AboutView: View {
                     .padding(.leading)
             }
         }
+        .padding()
     }
 }
 

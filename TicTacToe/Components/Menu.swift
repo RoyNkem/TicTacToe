@@ -25,12 +25,13 @@ struct Menu: View {
             }
             
             if self.show {
-                GeometryReader {_ in
+                GeometryReader { geometry in
                     
                     DropdownMenu()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
                 }
                 .background(Color.black.opacity(0.65))
-                .edgesIgnoringSafeArea(.all)
+//                .edgesIgnoringSafeArea(.all)
                 .onTapGesture {
                     
                     withAnimation {
