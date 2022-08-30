@@ -15,6 +15,8 @@
 		3081654828351B4400BAF419 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081654728351B4400BAF419 /* Preview Assets.xcassets */; };
 		3081654F28351B6800BAF419 /* TicTacBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654E28351B6800BAF419 /* TicTacBox.swift */; };
 		308165562835277900BAF419 /* PlayersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308165552835277900BAF419 /* PlayersCard.swift */; };
+		308917E028BD861C0033E490 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308917DF28BD861C0033E490 /* AlertView.swift */; };
+		308917E228BDA54D0033E490 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308917E128BDA54D0033E490 /* Outcome.swift */; };
 		30AFDE8B28BD3E2D009665B1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */; };
 		30AFDE8D28BD3E66009665B1 /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */; };
 		30B09063287C948A0059BB30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09062287C948A0059BB30 /* HomeView.swift */; };
@@ -35,6 +37,8 @@
 		3081654728351B4400BAF419 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3081654E28351B6800BAF419 /* TicTacBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacBox.swift; sourceTree = "<group>"; };
 		308165552835277900BAF419 /* PlayersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCard.swift; sourceTree = "<group>"; };
+		308917DF28BD861C0033E490 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		308917E128BDA54D0033E490 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 		30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
 		30B09062287C948A0059BB30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		3081655328351CBB00BAF419 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				308917E128BDA54D0033E490 /* Outcome.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				308165552835277900BAF419 /* PlayersCard.swift */,
 				30CA79CA287E47190085AF62 /* Menu.swift */,
 				30CA79C6287E25B30085AF62 /* NavigationBar.swift */,
+				308917DF28BD861C0033E490 /* AlertView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 				3081654328351B4000BAF419 /* ContentView.swift in Sources */,
 				30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */,
 				3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */,
+				308917E228BDA54D0033E490 /* Outcome.swift in Sources */,
 				3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */,
+				308917E028BD861C0033E490 /* AlertView.swift in Sources */,
 				30CA79CB287E47190085AF62 /* Menu.swift in Sources */,
 				308165562835277900BAF419 /* PlayersCard.swift in Sources */,
 				30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */,

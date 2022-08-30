@@ -12,6 +12,7 @@ struct CapsuleView: View {
     @State var color: Color
     @State var lineWidth: CGFloat
     @Binding var offset: CGPoint
+    let text: String
     
     var body: some View {
         ZStack {
@@ -19,7 +20,7 @@ struct CapsuleView: View {
             Capsule()
                 .stroke(style: .init(lineWidth: lineWidth))
                 .overlay(content: {
-                    Text("Tic")
+                    Text(text)
                         .fontWeight(.bold)
                 })
                 .foregroundColor(color)
@@ -35,6 +36,7 @@ struct CapsuleView_Previews: PreviewProvider {
                                                   height: 50)),
                     color: .green,
                     lineWidth: 15,
-                    offset: Binding.constant(.zero))
+                    offset: Binding.constant(.zero),
+                    text: "Tic")
     }
 }

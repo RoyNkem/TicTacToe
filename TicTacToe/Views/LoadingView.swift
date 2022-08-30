@@ -17,8 +17,8 @@ private struct Constants {
 }
 
 struct LoadingView: View {
-    
     private let colorArray: [Color] = [.orange, .cyan, .green]
+    var changingText: [String] = ["Tac", "Tic", "Toe"]
     @State private var capsuleViewSizeArray = [CGSize(width: Constants.capsuleSize,
                                                       height: Constants.capsuleSize),
                                                CGSize(width: Constants.capsuleSize,
@@ -36,9 +36,10 @@ struct LoadingView: View {
                     CapsuleView(size: $capsuleViewSizeArray[i],
                                 color: colorArray[i],
                                 lineWidth: Constants.lineWidth,
-                                offset: $capsuleViewOffsetArray[i])
+                                offset: $capsuleViewOffsetArray[i], text: changingText[i])
                 }
-            }.offset(y: -40)
+            }
+            .offset(y: -40)
         }
         .frame(minWidth: 100, maxHeight: 150)
         .onAppear() {
@@ -51,6 +52,7 @@ struct LoadingView: View {
     
     private func startAnimation() {
         let totalSize = (Constants.capsuleSize * 2) + Constants.spacing
+        
         withAnimation(.easeInOut(duration: 0.5)) {
             capsuleViewSizeArray[2].width = Constants.capsuleSize
             capsuleViewOffsetArray[2].x = -30
@@ -96,7 +98,7 @@ struct LoadingView: View {
                 capsuleViewOffsetArray[1].x = 0
             }
         }
-
+        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.2) {
             withAnimation(.easeInOut(duration: 0.5)) {

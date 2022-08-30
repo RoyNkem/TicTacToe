@@ -13,22 +13,23 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            VStack(spacing: 100) {
-                
-                LoadingView()
-                                
-                Button {
-                    isContentViewPresented.toggle()
-                } label: {
-                    Image(systemName: "play.fill")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .frame(width: 80, height: 80)
-                        .background(Color("play"))
-                        .cornerRadius(40)
+                VStack(spacing: 100) {
                     
+                    LoadingView()
+                                    
+                    Button {
+                        isContentViewPresented.toggle()
+                    } label: {
+                        Image(systemName: "play.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .frame(width: 80, height: 80)
+                            .background(Color("play"))
+                            .cornerRadius(40)
+                        
+                    }
                 }
-            }
+                .offset(y: 60)
         } // presents modal view that covers screen when binding is true
         .fullScreenCover(isPresented: $isContentViewPresented) {
             ContentView()
