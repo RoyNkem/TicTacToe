@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AlertView: View {
     @State private var show: Bool = false
+//    let outcome: Outcome
     
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)) {

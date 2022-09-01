@@ -12,7 +12,9 @@ struct Outcome {
     let message: MessageOutcome
     let image: ImageOutcome
     let button: ButtonOutcome
-    let color: Color
+    let color: [Color]
+//    
+//    static let `default` = Self(message: MessageOutcome(rawValue: "You win") ?? <#default value#>MessageOutcome(rawValue: ) ?? <#default value#>, image: ImageOutcome(rawValue: "trophy") ?? <#default value#>, button: ButtonOutcome(rawValue: "Share") ?? <#default value#>, color: [.orange, .blue])
 }
 
 enum MessageOutcome: String {
