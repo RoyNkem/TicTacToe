@@ -26,13 +26,16 @@ struct HomeView: View {
                             .frame(width: 80, height: 80)
                             .background(Color("play"))
                             .cornerRadius(40)
+                            .shadow(color: Color("Color").opacity(0.3), radius: 1, x: 0, y: 1)
                         
                     }
                 }
                 .offset(y: 60)
         } // presents modal view that covers screen when binding is true
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("Background2"))
         .fullScreenCover(isPresented: $isContentViewPresented) {
-            ContentView()
+            LoginView()
         }
     }
 }
@@ -40,5 +43,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.dark)
     }
 }

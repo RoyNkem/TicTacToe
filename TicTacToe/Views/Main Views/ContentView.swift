@@ -16,9 +16,12 @@ struct ContentView: View {
             
             PlayersCard()
         }
+        .background(Color("play").opacity(0.6))
         .background(LinearGradient(gradient: .init(colors: [Color("purple1"), Color("purple2")]), startPoint: .topTrailing, endPoint: .bottomLeading))
         .overlay(
+            
             NavigationBar()
+            
         )
     }
 }
@@ -26,7 +29,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-//        ContentView()
 //            .preferredColorScheme(.dark)
     }
 }

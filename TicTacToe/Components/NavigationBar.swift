@@ -25,7 +25,7 @@ struct NavigationBar: View {
                 Image("TicTacToe")
                     .resizable()
                     .frame(width: 30, height: 30)
-                    .clipShape(Circle())
+                    .clipShape(Rectangle()).cornerRadius(8)
                 
                 Spacer()
             }

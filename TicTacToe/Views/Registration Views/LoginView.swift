@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct LoginView: View {
     @State var index = 0
@@ -30,7 +31,7 @@ struct LoginView: View {
                         .clipShape(Rectangle()).cornerRadius(5)
                 }
                 .padding(.vertical)
-                .shadow(color: Color("Background"), radius: 0.3, x: 0.5, y: 2)
+                .shadow(color: Color("Background"), radius: 0.2, x: 0.5, y: 1)
                 .offset(x:-15)
                 
                 
@@ -47,13 +48,14 @@ struct LoginView: View {
                 HStack(spacing: 15){
                     
                     Rectangle()
-                    .fill(Color("play"))
+                    .fill(Color("Color"))
                     .frame(height: 1)
                     
                     Text("OR")
+                        .foregroundColor(Color("Color"))
                     
                     Rectangle()
-                    .fill(Color("play"))
+                    .fill(Color("Color"))
                     .frame(height: 1)
                 }
                 .padding(.horizontal, 30)
@@ -66,27 +68,25 @@ struct LoginView: View {
                         
                     }) {
                         
-                        Image("twitter")
+                        Image("Logo Google")
                         .resizable()
                         .renderingMode(.original)
                         .frame(width: 50, height: 50)
-                        .clipShape(Circle())
                     }
                     
                     Button(action: {
                         
                     }) {
                         
-                        Image("github")
+                        Image("Logo Apple")
                         .resizable()
                         .renderingMode(.original)
                         .frame(width: 50, height: 50)
-                        .clipShape(Circle())
                     }
                 }
                 .padding(.top, 30)
             }
-            .padding(.vertical)
+            .padding(.top, 30)
         }
         .background(Color("Background2").edgesIgnoringSafeArea(.all))
     }
@@ -95,6 +95,7 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .previewInterfaceOrientation(.portrait)
             .preferredColorScheme(.dark)
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct SignUp: View {
     @State var email = ""
     @State var password = ""
+    @State var rePassword = ""
     @Binding var index : Int
     
     var body: some View{
@@ -41,9 +42,13 @@ struct SignUp: View {
                     HStack(spacing: 15){
                         
                         Image(systemName: "envelope.fill")
-                        .foregroundColor(Color("play"))
+                            .foregroundColor(Color("play"))
                         
-                        TextField("Email Address", text: self.$email)
+                        TextField("Username or Email ", text: self.$email)
+                            .disableAutocorrection(true)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                        
                     }
                     
                     Divider().background(Color.white.opacity(0.5))
@@ -52,12 +57,12 @@ struct SignUp: View {
                 .padding(.top, 50)
                 
                 SecureTextField(placeholder: "Password", password: $password)
-            .padding(.horizontal)
-            .padding(.top, 30)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
                 
-                SecureTextField(placeholder: " Re-enter Password", password: $password)
-            .padding(.horizontal)
-            .padding(.top, 30)
+                SecureTextField(placeholder: " Confirm Password", password: $rePassword)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
             }
             .padding()
             // bottom padding...
@@ -69,9 +74,9 @@ struct SignUp: View {
             // shadow...
             .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
             .onTapGesture {
-            
+                
                 self.index = 1
-                    
+                
             }
             .cornerRadius(35)
             .padding(.horizontal,20)
@@ -89,7 +94,7 @@ struct SignUp: View {
                     .padding(.horizontal, 50)
                     .background(Color("play"))
                     .clipShape(Capsule())
-                    // shadow...
+                // shadow...
                     .shadow(color: Color("Color").opacity(0.2), radius: 2, x: 0, y: 2)
             }
             // moving view down..
@@ -104,6 +109,6 @@ struct SignUp: View {
 struct SignUp_Previews: PreviewProvider {
     static var previews: some View {
         SignUp(index: .constant(1))
-//            .preferredColorScheme(.dark)
+        //            .preferredColorScheme(.dark)
     }
 }

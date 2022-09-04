@@ -17,10 +17,10 @@ struct SecureTextField: View {
         VStack {
             HStack(spacing: 15){
                 Image(systemName: isSecureField ? "eye.slash.fill" : "eye")
-                .foregroundColor(Color("play"))
-                .onTapGesture {
-                    isSecureField.toggle()
-                }
+                    .foregroundColor(Color("play"))
+                    .onTapGesture {
+                        isSecureField.toggle()
+                    }
                 
                 if isSecureField {
                     SecureField(placeholder, text: $password)
@@ -28,6 +28,8 @@ struct SecureTextField: View {
                     TextField(placeholder, text: $password)
                 }
             }
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
             
             Divider().background(Color.white.opacity(0.5))
         }
@@ -69,20 +71,22 @@ struct Login: View {
                     HStack(spacing: 15){
                         
                         Image(systemName: "envelope.fill")
-                        .foregroundColor(Color("play"))
+                            .foregroundColor(Color("play"))
                         
-                        TextField("Email Address", text: self.$email)
-
+                        TextField("Username or Email", text: self.$email)
+                            .disableAutocorrection(true)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
                     }
                     
                     Divider().background(Color.white.opacity(0.5))
                 }
                 .padding(.horizontal)
                 .padding(.top, 50)
-                                    
+                
                 SecureTextField(placeholder: "Password", password: $password)
-                .padding(.horizontal)
-                .padding(.top, 30)
+                    .padding(.horizontal)
+                    .padding(.top, 30)
                 
                 HStack{
                     
@@ -106,14 +110,14 @@ struct Login: View {
             .clipShape(CurveShape())
             .contentShape(CurveShape())
             .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: -5)
-        
+            
             .onTapGesture {
                 self.index = 0
             }
             .cornerRadius(35)
             .padding(.horizontal,20)
             
-            // Button...
+            //MARK: - Login Button...
             
             Button(action: {
                 
@@ -126,21 +130,21 @@ struct Login: View {
                     .padding(.horizontal, 50)
                     .background(Color("play"))
                     .clipShape(Capsule())
-                    // shadow...
+                // shadow...
                     .shadow(color: Color("Color").opacity(0.2), radius: 2, x: 0, y: 2)
-                 
+                
             }
             // moving view down..
             .offset(y: 25)
             .opacity(self.index == 0 ? 1 : 0)
         }
     }
-
+    
 }
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login(index: .constant(0))
-//            .preferredColorScheme(.dark)
+        //            .preferredColorScheme(.dark)
     }
 }

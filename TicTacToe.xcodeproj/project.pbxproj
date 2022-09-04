@@ -11,6 +11,7 @@
 		30057D4228C4E4BE001B7CD4 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4128C4E4BE001B7CD4 /* DatabaseManager.swift */; };
 		30057D4428C4EA1A001B7CD4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4328C4EA1A001B7CD4 /* Login.swift */; };
 		30057D4628C4EA28001B7CD4 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4528C4EA28001B7CD4 /* SignUp.swift */; };
+		30057D4828C56081001B7CD4 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 30057D4728C56081001B7CD4 /* Fonts */; };
 		3075E60D2881D7B0003C9D0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60C2881D7B0003C9D0A /* SettingsView.swift */; };
 		3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60E2881D7E9003C9D0A /* AboutView.swift */; };
 		3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654028351B4000BAF419 /* TicTacToeApp.swift */; };
@@ -38,6 +39,9 @@
 		30057D4128C4E4BE001B7CD4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		30057D4328C4EA1A001B7CD4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		30057D4528C4EA28001B7CD4 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		30057D4728C56081001B7CD4 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		30057D4928C560B6001B7CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30057D4B28C56582001B7CD4 /* play_button_event_example.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = play_button_event_example.riv; sourceTree = "<group>"; };
 		3075E60C2881D7B0003C9D0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3075E60E2881D7E9003C9D0A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3081653D28351B4000BAF419 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		30057D4A28C56531001B7CD4 /* Rive */ = {
+			isa = PBXGroup;
+			children = (
+				30057D4B28C56582001B7CD4 /* play_button_event_example.riv */,
+			);
+			path = Rive;
+			sourceTree = "<group>";
+		};
 		3081653428351B4000BAF419 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +120,10 @@
 		3081653F28351B4000BAF419 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				30057D4928C560B6001B7CD4 /* Info.plist */,
 				3081654028351B4000BAF419 /* TicTacToeApp.swift */,
+				30057D4A28C56531001B7CD4 /* Rive */,
+				30057D4728C56081001B7CD4 /* Fonts */,
 				308165542835276900BAF419 /* Components */,
 				3081655228351CAD00BAF419 /* Views */,
 				3081655328351CBB00BAF419 /* Model */,
@@ -275,6 +290,7 @@
 				3081654828351B4400BAF419 /* Preview Assets.xcassets in Resources */,
 				3081654528351B4400BAF419 /* Assets.xcassets in Resources */,
 				3094F23F28C4CD6B0038F0AE /* GoogleService-Info.plist in Resources */,
+				30057D4828C56081001B7CD4 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +497,7 @@
 				DEVELOPMENT_TEAM = L77873QU8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -511,6 +528,7 @@
 				DEVELOPMENT_TEAM = L77873QU8Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
