@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30057D4028C4E42C001B7CD4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D3F28C4E42C001B7CD4 /* AuthManager.swift */; };
+		30057D4228C4E4BE001B7CD4 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4128C4E4BE001B7CD4 /* DatabaseManager.swift */; };
+		30057D4428C4EA1A001B7CD4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4328C4EA1A001B7CD4 /* Login.swift */; };
+		30057D4628C4EA28001B7CD4 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30057D4528C4EA28001B7CD4 /* SignUp.swift */; };
 		3075E60D2881D7B0003C9D0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60C2881D7B0003C9D0A /* SettingsView.swift */; };
 		3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075E60E2881D7E9003C9D0A /* AboutView.swift */; };
 		3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081654028351B4000BAF419 /* TicTacToeApp.swift */; };
@@ -17,18 +21,23 @@
 		308165562835277900BAF419 /* PlayersCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308165552835277900BAF419 /* PlayersCard.swift */; };
 		308917E028BD861C0033E490 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308917DF28BD861C0033E490 /* AlertView.swift */; };
 		308917E228BDA54D0033E490 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308917E128BDA54D0033E490 /* Outcome.swift */; };
+		3094F23F28C4CD6B0038F0AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3094F23E28C4CD6B0038F0AE /* GoogleService-Info.plist */; };
+		309EB2A528C4C4FA00D4E76B /* CurveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EB2A428C4C4FA00D4E76B /* CurveShape.swift */; };
+		30A0161C28C4AB50006CC417 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A0161B28C4AB50006CC417 /* LoginView.swift */; };
 		30AFDE8B28BD3E2D009665B1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */; };
 		30AFDE8D28BD3E66009665B1 /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */; };
 		30B09063287C948A0059BB30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09062287C948A0059BB30 /* HomeView.swift */; };
-		30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09064287C9A190059BB30 /* AppDelegate.swift */; };
-		30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B09066287C9B460059BB30 /* SceneDelegate.swift */; };
 		30CA79C7287E25B30085AF62 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79C6287E25B30085AF62 /* NavigationBar.swift */; };
 		30CA79C9287E2C720085AF62 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79C8287E2C720085AF62 /* Extension.swift */; };
-		30CA79CB287E47190085AF62 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA79CA287E47190085AF62 /* Menu.swift */; };
 		30DE6BFB28C1422B0066FC58 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE6BFA28C1422B0066FC58 /* Haptics.swift */; };
+		D89A7287110CFEBFF630A410 /* Pods_TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6471B63D3ACAF11E99A9D13 /* Pods_TicTacToe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30057D3F28C4E42C001B7CD4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		30057D4128C4E4BE001B7CD4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		30057D4328C4EA1A001B7CD4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		30057D4528C4EA28001B7CD4 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		3075E60C2881D7B0003C9D0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3075E60E2881D7E9003C9D0A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3081653D28351B4000BAF419 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,15 +49,18 @@
 		308165552835277900BAF419 /* PlayersCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCard.swift; sourceTree = "<group>"; };
 		308917DF28BD861C0033E490 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		308917E128BDA54D0033E490 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		3094F23E28C4CD6B0038F0AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		309EB2A428C4C4FA00D4E76B /* CurveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveShape.swift; sourceTree = "<group>"; };
+		30A0161B28C4AB50006CC417 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
 		30B09062287C948A0059BB30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		30B09064287C9A190059BB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30B09066287C9B460059BB30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30CA79C6287E25B30085AF62 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		30CA79C8287E2C720085AF62 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		30CA79CA287E47190085AF62 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		30DE6BFA28C1422B0066FC58 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		96F45892E45ED3D7CACF18AF /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
+		C6B49C940AE42F3D705619C8 /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
+		D6471B63D3ACAF11E99A9D13 /* Pods_TicTacToe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +68,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89A7287110CFEBFF630A410 /* Pods_TicTacToe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30057D3E28C4E40F001B7CD4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				30057D3F28C4E42C001B7CD4 /* AuthManager.swift */,
+				30057D4128C4E4BE001B7CD4 /* DatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		3081653428351B4000BAF419 = {
 			isa = PBXGroup;
 			children = (
-				30DE6BFC28C142320066FC58 /* Resources */,
+				3094F23E28C4CD6B0038F0AE /* GoogleService-Info.plist */,
 				3081653F28351B4000BAF419 /* TicTacToe */,
+				30057D3E28C4E40F001B7CD4 /* Managers */,
+				30DE6BFC28C142320066FC58 /* Resources */,
 				3081653E28351B4000BAF419 /* Products */,
+				6BB01A69BD226D3DAE559D74 /* Pods */,
+				D92FF5A7BBDF20B008C94EF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,14 +108,11 @@
 		3081653F28351B4000BAF419 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				30B09064287C9A190059BB30 /* AppDelegate.swift */,
-				30B09066287C9B460059BB30 /* SceneDelegate.swift */,
 				3081654028351B4000BAF419 /* TicTacToeApp.swift */,
 				308165542835276900BAF419 /* Components */,
 				3081655228351CAD00BAF419 /* Views */,
 				3081655328351CBB00BAF419 /* Model */,
 				3081654428351B4400BAF419 /* Assets.xcassets */,
-				30CA79C8287E2C720085AF62 /* Extension.swift */,
 				3081654628351B4400BAF419 /* Preview Content */,
 			);
 			path = TicTacToe;
@@ -106,13 +129,9 @@
 		3081655228351CAD00BAF419 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				30B09062287C948A0059BB30 /* HomeView.swift */,
-				3081654228351B4000BAF419 /* ContentView.swift */,
-				3081654E28351B6800BAF419 /* TicTacBox.swift */,
-				3075E60E2881D7E9003C9D0A /* AboutView.swift */,
-				3075E60C2881D7B0003C9D0A /* SettingsView.swift */,
-				30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */,
-				30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */,
+				30A0161828C4AA75006CC417 /* Main Views */,
+				30A0161928C4AA9E006CC417 /* Others */,
+				30A0161A28C4AB2E006CC417 /* Registration Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,20 +147,69 @@
 		308165542835276900BAF419 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3081654E28351B6800BAF419 /* TicTacBox.swift */,
 				308165552835277900BAF419 /* PlayersCard.swift */,
-				30CA79CA287E47190085AF62 /* Menu.swift */,
 				30CA79C6287E25B30085AF62 /* NavigationBar.swift */,
 				308917DF28BD861C0033E490 /* AlertView.swift */,
+				309EB2A428C4C4FA00D4E76B /* CurveShape.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		30A0161828C4AA75006CC417 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				30B09062287C948A0059BB30 /* HomeView.swift */,
+				3081654228351B4000BAF419 /* ContentView.swift */,
+				3075E60E2881D7E9003C9D0A /* AboutView.swift */,
+				3075E60C2881D7B0003C9D0A /* SettingsView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		30A0161928C4AA9E006CC417 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				30AFDE8A28BD3E2D009665B1 /* LoadingView.swift */,
+				30AFDE8C28BD3E66009665B1 /* CapsuleView.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		30A0161A28C4AB2E006CC417 /* Registration Views */ = {
+			isa = PBXGroup;
+			children = (
+				30A0161B28C4AB50006CC417 /* LoginView.swift */,
+				30057D4528C4EA28001B7CD4 /* SignUp.swift */,
+				30057D4328C4EA1A001B7CD4 /* Login.swift */,
+			);
+			path = "Registration Views";
 			sourceTree = "<group>";
 		};
 		30DE6BFC28C142320066FC58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				30DE6BFA28C1422B0066FC58 /* Haptics.swift */,
+				30CA79C8287E2C720085AF62 /* Extension.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BB01A69BD226D3DAE559D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6B49C940AE42F3D705619C8 /* Pods-TicTacToe.debug.xcconfig */,
+				96F45892E45ED3D7CACF18AF /* Pods-TicTacToe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D92FF5A7BBDF20B008C94EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6471B63D3ACAF11E99A9D13 /* Pods_TicTacToe.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3081654B28351B4400BAF419 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
 			buildPhases = (
+				64B2E9E10C45F6AC80C8979C /* [CP] Check Pods Manifest.lock */,
 				3081653928351B4000BAF419 /* Sources */,
 				3081653A28351B4000BAF419 /* Frameworks */,
 				3081653B28351B4000BAF419 /* Resources */,
+				C259BEE3CB796736850BF77C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,10 +274,53 @@
 			files = (
 				3081654828351B4400BAF419 /* Preview Assets.xcassets in Resources */,
 				3081654528351B4400BAF419 /* Assets.xcassets in Resources */,
+				3094F23F28C4CD6B0038F0AE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64B2E9E10C45F6AC80C8979C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C259BEE3CB796736850BF77C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3081653928351B4000BAF419 /* Sources */ = {
@@ -215,17 +328,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				30CA79C9287E2C720085AF62 /* Extension.swift in Sources */,
+				309EB2A528C4C4FA00D4E76B /* CurveShape.swift in Sources */,
 				3081654328351B4000BAF419 /* ContentView.swift in Sources */,
 				30DE6BFB28C1422B0066FC58 /* Haptics.swift in Sources */,
-				30B09067287C9B460059BB30 /* SceneDelegate.swift in Sources */,
 				3081654128351B4000BAF419 /* TicTacToeApp.swift in Sources */,
 				308917E228BDA54D0033E490 /* Outcome.swift in Sources */,
 				3075E60F2881D7E9003C9D0A /* AboutView.swift in Sources */,
+				30057D4028C4E42C001B7CD4 /* AuthManager.swift in Sources */,
+				30057D4228C4E4BE001B7CD4 /* DatabaseManager.swift in Sources */,
+				30057D4628C4EA28001B7CD4 /* SignUp.swift in Sources */,
 				308917E028BD861C0033E490 /* AlertView.swift in Sources */,
-				30CA79CB287E47190085AF62 /* Menu.swift in Sources */,
 				308165562835277900BAF419 /* PlayersCard.swift in Sources */,
-				30B09065287C9A190059BB30 /* AppDelegate.swift in Sources */,
+				30A0161C28C4AB50006CC417 /* LoginView.swift in Sources */,
 				30B09063287C948A0059BB30 /* HomeView.swift in Sources */,
+				30057D4428C4EA1A001B7CD4 /* Login.swift in Sources */,
 				3081654F28351B6800BAF419 /* TicTacBox.swift in Sources */,
 				30CA79C7287E25B30085AF62 /* NavigationBar.swift in Sources */,
 				30AFDE8B28BD3E2D009665B1 /* LoadingView.swift in Sources */,
@@ -355,6 +471,7 @@
 		};
 		3081654C28351B4400BAF419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B49C940AE42F3D705619C8 /* Pods-TicTacToe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +501,7 @@
 		};
 		3081654D28351B4400BAF419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F45892E45ED3D7CACF18AF /* Pods-TicTacToe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

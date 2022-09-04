@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct TicTacBox: View {
     
     var columns: [GridItem] = Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)

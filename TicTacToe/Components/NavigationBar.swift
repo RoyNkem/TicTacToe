@@ -28,8 +28,6 @@ struct NavigationBar: View {
                     .clipShape(Circle())
                 
                 Spacer()
-                
-                Menu()
             }
         }
         .frame(height: 70)

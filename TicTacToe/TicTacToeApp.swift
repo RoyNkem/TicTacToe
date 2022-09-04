@@ -6,14 +6,24 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct TicTacToeApp: App {
-    @UIApplicationDelegateAdaptor var delegate: AppDelegate
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor private var delegate: AppDelegate
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            LoginView()
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        
+        return true
     }
 }
